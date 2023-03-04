@@ -15,7 +15,7 @@ async function startBot() {
 
 	await page.signin();
         await sleep(20) 
-        
+    
 	site = "https://www.linkedin.com/mynetwork/invitation-manager";
         await sleep(5)
 	await page.visit(site);
