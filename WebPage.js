@@ -66,7 +66,23 @@ const BasePage = function (customAudio = null) {
     let buttons = await this.findByClassName(
       "artdeco-button--secondary invitation-card__action-btn"
     );
-    await buttons.click();
+
+    // The filter method is called on the resulting array of buttons, and is passed a callback function that checks each button's class list. If a class with the name "conversations-quick-replies__reply-button" exists, the button is filtered out of the array.
+
+    let filteredButtons = await Promise.all(
+      buttons.filter(async (button) => {
+        const classList = await button.getAttribute("class");
+        return !classList.includes("conversations-quick-replies__reply-button");
+      })
+    );
+
+    const MAX_BUTTONS_PER_MINUTE = 10;
+    const INTERVAL_IN_MS = 60 * 1000 / MAX_BUTTONS_PER_MINUTE;
+  
+    for(let i=0; i<filteredButtons.length;i++){
+      await filteredButtons[i].click();
+      await new Promise((resolve) => setTimeout(resolve, INTERVAL_IN_MS));
+    }
   };
 
   this.scrollToBottom = async function () {
