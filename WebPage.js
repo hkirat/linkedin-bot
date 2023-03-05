@@ -1,9 +1,10 @@
+require("dotenv").config();
 const { Builder, By, until } = require("selenium-webdriver");
 
 const chrome = require("selenium-webdriver/chrome");
 
 function initOptions(o) {
-//   o.addArguments("headless");
+  //   o.addArguments("headless");
   o.addArguments("disable-infobars");
   o.addArguments("no-sandbox");
   o.addArguments(
@@ -47,27 +48,30 @@ const BasePage = function (customAudio = null) {
     return await this.driver.findElement(By.className(name));
   };
 
-  this.signin = async function() {
+  this.signin = async function () {
     let name = process.env.USERNAME || "";
-    let password = process.env.PASSWORD ||  "";
+    let password = process.env.PASSWORD || "";
     let input = await this.findById("session_key");
     await input.sendKeys(name);
     let input2 = await this.findById("session_password");
     await input2.sendKeys(password);
-    let button = await this.findByClassName("sign-in-form__submit-btn--full-width");
+    let button = await this.findByClassName(
+      "sign-in-form__submit-btn--full-width"
+    );
     console.log(button);
     await button.click();
-  }
+  };
 
   this.pressAcceptButton = async function () {
-    let buttons = await this.findByClassName("artdeco-button--secondary");
+    let buttons = await this.findByClassName(
+      "artdeco-button--secondary invitation-card__action-btn"
+    );
     await buttons.click();
   };
 
-  this.scrollToBottom = async function() {
-    this.driver.executeScript("window.scrollTo(0, document.body.scrollHeight)")
-  }
+  this.scrollToBottom = async function () {
+    this.driver.executeScript("window.scrollTo(0, document.body.scrollHeight)");
+  };
 };
 
 module.exports = BasePage;
-
