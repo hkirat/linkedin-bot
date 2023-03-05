@@ -13,14 +13,14 @@ A linkedin-bot which automatically accepts all the connection invitations.
 2) Clone this repo.
 3) Configure your environment variables.
 &ensp;3.a) MacOS/Linux <br />
-&emsp;> export USERNAME="Replace this with your linkedin username without quotes)" <br />
-&emsp;> export PASSWORD="Replace this with your linkedin password without quotes)" <br />
+&emsp;`> export USERNAME="Replace this with your linkedin username without quotes)"` <br />
+&emsp;`> export PASSWORD="Replace this with your linkedin password without quotes)"` <br />
 &ensp;3.b) Windows-CMD <br />
-&emsp;> setx USERNAME "Replace this with your linkedin username without quotes" <br />
-&emsp;> setx PASSWORD "Replace this with your linkedin password without quotes" <br />
+&emsp;`> setx USERNAME "Replace this with your linkedin username without quotes"` <br />
+&emsp;`> setx PASSWORD "Replace this with your linkedin password without quotes"` <br />
 &ensp;3.c) Powershell <br />
-&emsp;> $Env:USERNAME="Replace this with your linkedin username" <br />
-&emsp;> $Env:PASSWORD="Replace this with your linkedin password" <br />
+&emsp;`> $Env:USERNAME="Replace this with your linkedin username"` <br />
+&emsp;`> $Env:PASSWORD="Replace this with your linkedin password"` <br />
 4) Install node and chrome-driver.
 5) cd to project root and install dependencies using "npm i"
 6) Run the application. <br />
