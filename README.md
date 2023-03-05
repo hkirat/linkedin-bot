@@ -23,6 +23,6 @@ A linkedin-bot which automatically accepts all the connection invitations.
 &emsp;> $Env:PASSWORD="Replace this with your linkedin password" <br />
 4) Install node and chrome-driver.
 5) cd to project root and install dependencies using "npm i"
-6) Run the application.
+6) Run the application. <br />
 &ensp;6.a) Launch script by running "node index.js" <br />
 &ensp;6.b) Launch using pm2 by running "npm install pm2@latest -g && pm2 start index.js"<br />
