@@ -12,16 +12,14 @@ A linkedin-bot which automatically accepts all the connection invitations.
 1) SSH into your cloud instance.
 2) Clone this repo.
 3) Configure your environment variables.
-<br />
-    3.a) MacOS/Linux
-        > export USERNAME="Replace this with your linkedin username without quotes)"
-        > export PASSWORD="Replace this with your linkedin password without quotes)"
-    3.b) Windows-CMD
-        > setx USERNAME "Replace this with your linkedin username without quotes"
-        > setx PASSWORD "Replace this with your linkedin password without quotes"
-    3.c) Powershell
-        > $Env:USERNAME="Replace this with your linkedin username"
-        > $Env:PASSWORD="Replace this with your linkedin password"       
-<br /> 
+&ensp;3.a) MacOS/Linux
+&emsp;> export USERNAME="Replace this with your linkedin username without quotes)"
+&emsp;> export PASSWORD="Replace this with your linkedin password without quotes)"
+&ensp;3.b) Windows-CMD
+&emsp;> setx USERNAME "Replace this with your linkedin username without quotes"
+&emsp;> setx PASSWORD "Replace this with your linkedin password without quotes"
+&ensp;3.c) Powershell
+&emsp;> $Env:USERNAME="Replace this with your linkedin username"
+&emsp;> $Env:PASSWORD="Replace this with your linkedin password"       
 4) Install node, chrome-driver and selenium.
 5) Run the application.
