@@ -1,5 +1,4 @@
 # LINKEDIN-BOT
-
 A linkedin-bot which automatically accepts all the invitations. 
 
 ## Running it locally on your machine
