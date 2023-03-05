@@ -2,7 +2,7 @@
 A linkedin-bot which automatically accepts all the connection invitations. 
 
 ## Running it locally on your machine
-1) Clone this repo , cd to project root and add .env file with your username and password.
+1) Clone this repo , `cd` to project root and add `.env` file with your username and password.
 2) Make sure node is installed on your system.
 3) Install chrome-driver on your system.
 4) Install dependencies using `npm i`
@@ -11,7 +11,7 @@ A linkedin-bot which automatically accepts all the connection invitations.
 ## Running it on cloud instance like AWS
 1) SSH into your cloud instance.
 2) Clone this repo.
-3) Configure your environment variables.
+3) Configure your environment variables. <br />
 &ensp;3.a) MacOS/Linux <br />
 &emsp;`> export USERNAME="Replace this with your linkedin username without quotes)"` <br />
 &emsp;`> export PASSWORD="Replace this with your linkedin password without quotes)"` <br />
